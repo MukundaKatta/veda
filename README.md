@@ -1,56 +1,52 @@
-# 🔱 Veda — Open Learning Platform
+# veda — Open Learning Platform. Open-source learning platform
 
-> **Hindu Mythology**: Sacred Knowledge | Open-source learning platform
+*वेद — knowledge, the sacred scriptures.*
 
-[![GitHub Pages](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-blue?style=for-the-badge)](https://MukundaKatta.github.io/veda/)
-[![GitHub](https://img.shields.io/github/license/MukundaKatta/veda?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/MukundaKatta/veda?style=flat-square)](https://github.com/MukundaKatta/veda/stargazers)
+veda takes its name in that spirit. Open Learning Platform. Open-source learning platform.
 
-## 🚀 Overview
+## Why veda
 
-Open-source learning platform
+veda exists to make this workflow practical. Open learning platform. open-source learning platform. It favours a small, inspectable surface over sprawling configuration.
 
-**Tech Stack:** TypeScript, React
+## Features
 
-## 📦 Quick Start
+- `Difficulty` — exported from `src/veda/core.py`
+- `Exercise` — exported from `src/veda/core.py`
+- `Lesson` — exported from `src/veda/core.py`
+- Included test suite
+
+## Tech Stack
+
+- **Runtime:** Python
+
+## How It Works
+
+The codebase is organised into `src/`, `tests/`. The primary entry points are `src/veda/core.py`, `src/veda/__init__.py`. `src/veda/core.py` exposes `Difficulty`, `Exercise`, `Lesson` — the core types that drive the behaviour.
+
+## Getting Started
 
 ```bash
-git clone https://github.com/MukundaKatta/veda.git
-cd veda
-# Follow setup instructions below
+pip install -e .
 ```
 
-## 🏗️ Project Structure
+## Usage
+
+```python
+from veda.core import Difficulty
+
+instance = Difficulty()
+# See the source for the full API
+```
+
+## Project Structure
 
 ```
 veda/
-├── README.md
-├── LICENSE
 ├── CLAUDE.md
-├── .gitignore
+├── LICENSE
+├── README.md
+├── index.html
+├── pyproject.toml
 ├── src/
-│   ├── main.py
-│   ├── config.py
-│   └── utils.py
 ├── tests/
-│   └── test_main.py
-├── docs/
-│   └── architecture.md
-├── examples/
-│   └── basic_usage.py
-└── .github/
-    └── workflows/
-        └── static.yml
 ```
-
-## 🌐 Live Demo
-
-Visit the landing page: **https://MukundaKatta.github.io/veda/**
-
-## 📄 License
-
-MIT License — © 2026 Officethree Technologies
-
-## 🔱 Part of the Mythological Portfolio
-
-This is project **#veda** in the [100-project Mythological Portfolio](https://github.com/MukundaKatta) by Officethree Technologies.
